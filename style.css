@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap'); /*font-family: 'Passion One',
+cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /*font-family: 'Sriracha',
+cursive;*/
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+/*zera o padding e magin*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: red;
+
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    
+}
+
+header h1{
+    font-family: var(--fonte2);
+    font-size: 10vh;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+header p{
+    font-family: var(--font1);
+    color: white;    
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    font-weight: bolder;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 3.5vh;
+    font-family: var(--fonte3);
+}
+
+.fundo-branco{
+    background-color: white;
+    border: solid 1px black;
+    padding-left: 30px;
+    margin: auto;
+    margin-bottom: 0px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.308);
+}
+
+.transparente{
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 600px;    
+    margin: 50px 0px 50px 30px;
+    border: solid 1px black;
+    text-shadow: 1px 1px 0px black;;
+}
+
+/*Roda pé*/
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+footer p{
+    font-family: var(--fonte1);
+    padding: 20px;
+}
