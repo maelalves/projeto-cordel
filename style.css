@@ -16,10 +16,11 @@ cursive;*/
     margin: 0px;
 }
 
-body{
-    background-color: red;
-
+html, body{
+    min-height: 100vh; /*vh de vew height ou seja, 1005 da altura*/
+    
 }
+
 header{
     background-color: black;
     text-align: center;
@@ -29,7 +30,8 @@ header{
 
 header h1{
     font-family: var(--fonte2);
-    font-size: 10vh;
+    font-variant: small-caps; /*Coloca todas as letrs maiusculas mas com as primeiras letras maior*/
+    font-size: 10vw; /*vw de vew-width, ou seja porcentagem baseada na lagura*/
     font-weight: bold;
     padding-top: 50px;
 }
@@ -55,28 +57,49 @@ a:hover{
 }
 
 section{
-    padding-top: 10vh;
+   padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    padding-left: 30px;
     font-size: 3.5vh;
     font-family: var(--fonte3);
 }
 
-.fundo-branco{
-    background-color: white;
-    border: solid 1px black;
-    padding-left: 30px;
-    margin: auto;
-    margin-bottom: 0px;
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.308);
+section p{
+    padding-bottom: 2em;
 }
 
-.transparente{
-    background-color: rgba(0, 0, 0, 0.514);
-    width: 600px;    
-    margin: 50px 0px 50px 30px;
-    border: solid 1px black;
-    text-shadow: 1px 1px 0px black;;
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    /*cria sombra para dentro da section.imagem*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+
+}
+
+/*cria um fundo transparente para o paragrafo*/
+section.imagem >p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.281);
+}
+
+section#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
 }
 
 /*Roda pé*/
