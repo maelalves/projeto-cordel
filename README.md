@@ -1,3 +1,5 @@
 # projeto-cordel
 Projeto Cordel do Curso em Vídeo
-Esse projeto conta com a tecnologia de resposividade e paralax.
+
+Esse projeto traz o belissimo poema escrito por Milton Duarte.
+A page conta com as tecnologias de responsividade e efeito parallax.
